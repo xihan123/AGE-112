@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">AGE动漫</string>
+    <string name="setting_cleansMessage">删除全部缓存即清空本APP产生的所有缓存(不包括x5内核,如有需要删除到x5设置里面去删)\n
+        \n删除视频缓存即仅删除x5内核产生的视频缓存
+    </string>
+    <string name="about_copyright">© %1$s 希涵 All rights reserved.</string>
+    <string name="about_title">关于</string>
+    <string name="about_item_homepage">访问官网</string>
+    <string name="about_item_github">GitHub</string>
+    <string name="about_item_update">检查更新</string>
+    <string name="about_item_x5AutoPlayer">x5内核自动全屏播放</string>
+    <string name="about_item_diyApi">自定义API</string>
+    <string name="about_item_x5setting">内核设置</string>
+
+    <!-- 播放器文本 -->
+    <string name="set_user_speed">设置快进/快退时长</string>
+    <string name="player_setting_title">播放器设置</string>
+    <string name="picture_in_picture_title">画中画</string>
+    <string name="picture_in_picture_title2">小窗播放</string>
+
+    <string name="player_other_title">其他操作</string>
+    <string name="play_with_external_player">使用外部播放器播放</string>
+    <string name="open_external_browser">通过浏览器访问原地址</string>
+    <string name="click_to_sniffer">尝试网页嗅探解析</string>
+
+    <string name="device_title">设备列表</string>
+    <string name="notice">请选择连接设备，连接设备后才可播放</string>
+    <string name="selectedText">已选中: %s</string>
+    <string name="progress">进度</string>
+    <string name="volume">音量</string>
+    <string name="play">播放</string>
+    <string name="pause">暂停</string>
+    <string name="stop">停止</string>
+    <string name="exit">退出</string>
+    <string name="about_item_autodelete">退出自动删除视频缓存</string>
+    <string name="about_item_ds">打赏</string>
+
+    <string-array name="speed_item">
+        <item>5s</item>
+        <item>10s</item>
+        <item>15s</item>
+        <item>30s</item>
+    </string-array>
+</resources>

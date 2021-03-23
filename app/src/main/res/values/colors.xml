@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- common -->
+
+    <color name="app_color_blue_2">#31BDF3</color>
+
+    <!-- Grapefruit -->
+
+
+    <color name="orange800">#ef6c00</color>
+
+    <color name="grey900">#212121</color>
+
+    <color name="colorPrimary">#FFF</color>
+    <color name="colorPrimaryDark">#bdbdbd</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="window_bg">#FFF</color>
+    <color name="text_color_primary">#000</color>
+</resources>

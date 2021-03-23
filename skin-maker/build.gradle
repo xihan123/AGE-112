@@ -1,0 +1,42 @@
+apply plugin: 'com.android.library'
+
+
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'com.qmuiteam:qmui:2.0.0-alpha11'
+    implementation "com.qmuiteam:arch:2.0.0-alpha11"
+    annotationProcessor "com.qmuiteam:arch-compiler:2.0.0-alpha11" // use annotationProcessor if java
+
+
+    implementation "androidx.appcompat:appcompat:1.2.0"
+    implementation "com.tencent:mmkv-static:latest.release" //1.2.7
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+}

@@ -1,0 +1,49 @@
+{
+	"launch": {
+		"pic": [
+			"https://gitee.com/xihan123/AGE/raw/main/splash/1.png",
+			"https://gitee.com/xihan123/AGE/raw/main/splash/2.png",
+			"https://gitee.com/xihan123/AGE/raw/main/splash/3.png",
+			"https://gitee.com/xihan123/AGE/raw/main/splash/4.png",
+			"https://gitee.com/xihan123/AGE/raw/main/splash/5.png",
+			"https://gitee.com/xihan123/AGE/raw/main/splash/6.png",
+			"https://gitee.com/xihan123/AGE/raw/main/splash/7.png",
+			"https://gitee.com/xihan123/AGE/raw/main/splash/8.png",
+			"https://gitee.com/xihan123/AGE/raw/main/splash/9.png",
+			"https://gitee.com/xihan123/AGE/raw/main/splash/10.png",
+			"https://gitee.com/xihan123/AGE/raw/main/splash/11.png",
+			"https://gitee.com/xihan123/AGE/raw/main/splash/12.png"
+		],
+		"devicesId": [
+			"8014b2aaa69914d46f6bb2086c115e1e",
+			"ac51c7399a8614ca6d47bf12723ae6af"
+		],
+		"adUrls": [
+			"p.pstatp.com",
+			"k.jinxiuzhilv.com",
+			"im.cnbik.com",
+			"zz.imiqian.com",
+			"tp.zzyanhushi.com",
+			"k.metro114.com",
+			"tj.tianwenhu.com"
+		],
+		"wUrls":[
+		"https://p.pstatp.com/origin/feb200028c18f5dc8825",
+		"https://p.pstatp.com/origin/13843000115ffe11c0c01",
+		"https://p.pstatp.com/origin/137860000e3053288f11f",
+		"https://p.pstatp.com/origin/138420001bb20ce4bfb9e",
+		"https://p.pstatp.com/origin/ff2d000201c6f99a60d6",
+		]
+	},
+	"appversion": "1.0.2",
+	"versioncode": "112",
+	"Api":"https://xihan.coding.net/p/coding-code-guide/d/AGE-API/git/raw/master/details/",
+    "Api2":"https://code.aliyun.com/xihan/AGE-API/raw/master/details/",
+	"isUpdate": "true",
+	"DownloadApkUrl": "https://cdn.jsdelivr.net/gh/xihan123/AGE@main/2021-03-11_v1_armeabi-v7a_.apk",
+	"MyAge": "true",
+	"classes": "AF246459FBB8E478D3D71DF62AB2CBED",
+	"amf": "8F517F3688F94DF2F193A46B8803BE01",
+	"sha1": "cf29a850372000920a43834075453d6fe14be5cc,72ae58fdb68632e42db1dbe902099361b7f09275,4a96515c99304c933f365d45ce301ad6657f8f30",
+	"GG": "2021-03-24 更新:\n1.集成x5内核以及Exo播放器 \n2.无广告(播放页解析接口可能带广告，碰到请反馈) \n3.缓存清理 \n4.修复部分图片加载不出"
+}

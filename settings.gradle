@@ -1,0 +1,17 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        maven { url 'https://jitpack.io' }
+        google()
+        maven { url "https://maven.aliyun.com/repository/public" } //jcenter & central
+        maven { url "https://maven.aliyun.com/repository/google" }
+        maven{url 'file:///D:/AndroidStudioProject//AGE15//localrepo/'}
+        mavenCentral()
+    }
+}
+rootProject.name = "AGE动漫"
+include ':app'
+include ':skin-maker'
+
+include ':mySniffing'
+include ':paylibrary'

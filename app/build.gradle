@@ -1,0 +1,129 @@
+plugins {
+    id 'com.android.application'
+//    id 'bugly'
+}
+apply from: 'and_res_guard.gradle'
+
+android {
+
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    useLibrary 'org.apache.http.legacy'
+
+   
+    defaultConfig {
+        applicationId "cn.xihan.age"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 114
+        versionName '1.0.2'
+        ndk {
+            abiFilters   'armeabi-v7a' //,'arm64-v8a'
+            //abiFilters  'arm64-v8a'
+        }
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        signingConfig signingConfigs.xihantest
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            shrinkResources true
+            zipAlignEnabled true
+            pseudoLocalesEnabled true
+            renderscriptOptimLevel = 5
+            signingConfig signingConfigs.xihantest
+        }
+        debug {
+            signingConfig signingConfigs.xihantest
+        }
+
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    // 避免 lint 检测出错时停止构建
+    lintOptions {
+        abortOnError false
+    }
+    ndkVersion '22.0.7026061'
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/beans.xml'
+    }
+    dependenciesInfo {
+        includeInApk false
+        includeInBundle false
+    }
+}
+
+//bugly {
+//    appId = 'a826f523b3' // 注册时分配的App ID
+//    appKey = '4d15ea63-30f8-4dcf-b68e-3c1afa45dcc9' // 注册时分配的App Key
+//}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation "androidx.multidex:multidex:2.0.1"
+    implementation 'androidx.palette:palette:1.0.0'
+    //绑定
+    implementation 'com.jakewharton:butterknife:10.2.3'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.3'
+    //网络请求
+    implementation 'com.google.code.gson:gson:latest.release' //2.8.6
+    implementation 'com.squareup.okhttp3:okhttp:latest.release' //5.0.0-alpha.2
+    implementation 'com.android.volley:volley:latest.release' //1.2.0
+    //图片加载
+    implementation 'com.github.bumptech.glide:glide:latest.release' //4.12.0
+    annotationProcessor 'com.github.bumptech.glide:compiler:latest.release' //4.12.0
+    //x5
+    api 'com.tencent.tbs.tbssdk:sdk:latest.release' //43993
+    //exoplayer播放内核
+    implementation 'com.google.android.exoplayer:exoplayer:2.11.1'
+//    implementation 'com.kk.taurus.playerbase:playerbase:latest.release' //3.3.4.4
+//    implementation 'cn.jiajunhui:exoplayer:latest.release'
+    //JzPlayer
+    implementation 'cn.jzvd:jiaozivideoplayer:latest.release' //7.6.0
+    //工具类
+    implementation 'com.blankj:utilcodex:latest.release' //1.30.6
+//    implementation 'com.github.fanchen001:Sniffing:latest.release'
+    api project(path: ':mySniffing')
+    implementation project(path: ':paylibrary')
+    //lombok
+    compileOnly 'org.projectlombok:lombok:latest.release' //1.18.18
+    annotationProcessor 'org.projectlombok:lombok:latest.release' //1.18.18
+    testCompileOnly 'org.projectlombok:lombok:latest.release' //1.18.18
+    testAnnotationProcessor 'org.projectlombok:lombok:latest.release' //1.18.18
+    //Bugly
+    implementation 'com.tencent.bugly:crashreport_upgrade:latest.release'//1.5.1
+    implementation 'com.tencent.bugly:nativecrashreport:latest.release' //3.9.1
+    //QMUI
+    implementation 'com.qmuiteam:qmui:latest.release'
+    implementation "com.qmuiteam:arch:latest.release"
+    annotationProcessor "com.qmuiteam:arch-compiler:latest.release"
+    // Cling library
+    implementation 'org.fourthline.cling:cling-core:2.1.2'
+    implementation 'org.fourthline.cling:cling-support:2.1.2'
+    // Jetty library
+    implementation 'org.eclipse.jetty:jetty-server:8.1.12.v20130726'
+    implementation 'org.eclipse.jetty:jetty-servlet:8.1.12.v20130726'
+    implementation 'org.eclipse.jetty:jetty-client:8.1.12.v20130726'
+
+
+
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+}
